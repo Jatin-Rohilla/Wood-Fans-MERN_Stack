@@ -1,0 +1,337 @@
+/* .navbar_container {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+} */
+/* .navbar_container::before {
+  position: absolute;
+  content: "";
+  height: 60px;
+  width: 100%;
+  background-color: #f8f8f8;
+  z-index: -1;
+} */
+
+/* ------------- Navbar for Big Screen Starts Here -------------- */
+.navbar_bigscreen {
+  /* border: 1px solid rgb(0, 255, 34); */
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  padding: 0px 15px;
+  justify-content: space-between;
+}
+/* .navbar_container a {
+  color: #1b1b1b;
+} */
+.logo_navbar {
+  /* border: 1px solid red; */
+  width: 10%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.logo_navbar img {
+  width: 50px;
+}
+.navbar_content_container {
+  /* border: 1px solid black; */
+  padding-right: 10px;
+  padding-top: 10px;
+  width: 85%;
+}
+
+/* ----- Navbar Top Starts Here ----- */
+.navbar_top {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar_top > div:first-child {
+  display: flex;
+  /* border: 1px solid red; */
+  width: 70%;
+  /* gap: 4%; */
+}
+
+.navbar_top div > p {
+  /* border: 1px solid red; */
+  text-wrap: nowrap;
+  font-size: 0.85rem;
+  color: #7c7e7e;
+  margin-right: 4%;
+  text-decoration: none;
+}
+.navbar_top div > p .link {
+  text-decoration: none;
+  color: #7c7e7e;
+}
+
+.navbar_top > div:last-child {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 30%;
+}
+.search_icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search_icon > input {
+  border: none;
+  outline: none;
+  width: 80%;
+  background-color: #f8f8f8;
+}
+.search_icon > input::placeholder {
+  color: #aab1b1;
+}
+.search_icon {
+  display: flex;
+  border: 1px solid rgb(199, 195, 195);
+  padding: 8px;
+  border-radius: 5px;
+}
+.search_icon > img {
+  width: 22px;
+}
+.navbar_cart {
+  width: 20px;
+}
+.humanIcon img {
+  width: 25px;
+}
+.humanIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.countBigScreen {
+  position: absolute;
+  top: 0;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #fccd5c;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ------------------------ */
+.logindropdown {
+  position: absolute;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 12%;
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px;
+  gap: 10px;
+  text-align: center;
+  top: 62px;
+}
+.logindropdown > div {
+  border-bottom: 1px solid rgb(226, 225, 225);
+  padding-bottom: 5px;
+  color: #8e8f8f;
+}
+.logindropdown > div:hover {
+  color: #1b1b1b;
+  cursor: pointer;
+}
+/* --------------------- */
+
+.searchDropdown {
+  position: absolute;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 194px;
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px 0;
+  gap: 10px;
+  margin-left: -0.6%;
+  top: 62px;
+}
+.searchDropdown > div {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+.searchDropdown > div:hover {
+  background-color: #e9e6e6;
+}
+
+/* ----- Navbar Top Ends Here ----- */
+
+/* ----- Navbar Bottom Starts Here ------ */
+.navbar_bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar_bottom > div:first-child {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 6%;
+  width: 70%;
+  align-items: center;
+  font-size: 0.85rem;
+}
+.navbar_bottom > div:nth-child(2) div {
+  margin-top: 10px;
+}
+.navbar_bottom > div:nth-child(2) p {
+  /* border: 1px solid red; */
+  margin: 5px;
+  color: #3b3b3b;
+}
+.navbar_bottom > div:first-child p .link {
+  /* border: 1px solid red; */
+  text-decoration: none;
+  color: #3f3f3f;
+}
+
+/* ------------- Navbar for Big Screen Ends Here -------------- */
+
+/* ------------- Navbar for Small Screen Starts Here */
+.navbar_smallscreen {
+  /* border: 1px solid rgb(0, 255, 34); */
+  margin: auto;
+  display: flex;
+  padding: 0px 15px;
+}
+.logo_mobile {
+  width: 20%;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.logo_mobile img {
+  width: 35px;
+}
+.navbar_mobile {
+  /* border: 1px solid red; */
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  align-items: center;
+  /* margin-top: -40px; */
+}
+.navbar_humburger {
+  width: 30px;
+}
+.main_dropdown {
+  height: 100vh;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  /* border: 1px solid black; */
+  width: 100%;
+}
+.mobile_dropdown {
+  /* border: 1px solid red; */
+  padding-top: 25px;
+  text-align: center;
+  width: 100%;
+  overflow: auto;
+  height: 80%;
+}
+.mobile_dropdown > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.mobile_dropdown > div:nth-child(2) > div:nth-child(1) {
+  /* border: 1px solid red; */
+  text-align: left;
+}
+.mobile_dropdown > div:nth-child(2) > div:nth-child(2) {
+  /* border: 1px solid red; */
+  text-align: right;
+}
+.mobile_dropdown > div:nth-child(3) {
+  background-color: #eff2f5;
+  border-top: 1px solid #d0d3d3;
+  border-bottom: 1px solid #d0d3d3;
+}
+.mobile_dropdown > div:nth-child(3) h1 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+.mobile_dropdown > div:nth-child(3) p {
+  font-weight: 500;
+  padding-bottom: 15px;
+  color: #7c7e7e;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar_top div > p {
+    font-size: 0.8rem;
+  }
+  .logo_navbar > img {
+    width: 52px;
+  }
+  .navbar_container::before {
+    height: 60px;
+  }
+  .search_icon > img {
+    width: 15px;
+  }
+  .navbar_cart {
+    width: 20px;
+  }
+  .navbar_bottom {
+    padding-top: 8px;
+    font-size: 0.8rem;
+  }
+  .search_icon > input::placeholder {
+    font-size: 0.7rem;
+  }
+  .navbar_bottom > div:first-child {
+    font-size: 0.8rem;
+    text-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 850px) {
+  .navbar_smallscreen {
+    display: none;
+  }
+  .main_dropdown {
+    display: none;
+  }
+}
+@media screen and (max-width: 850px) {
+  .navbar_bigscreen {
+    display: none;
+  }
+  .navbar_container::before {
+    position: absolute;
+    content: "";
+    height: 75px;
+  }
+  .logindropdown {
+    width: 20%;
+  }
+  .searchDropdown {
+    margin-left: -1.1%;
+  }
+  .countBigScreen {
+    margin-top: 17px;
+    margin-left: 8px;
+  }
+}

@@ -1,0 +1,134 @@
+.Section1MainContainer {
+  /* border: 1px solid red; */
+  padding-top: 50px;
+}
+.Section1MainContainer a {
+  color: rgb(133, 132, 132);
+}
+.Section1Container {
+  /* border: 1px solid red; */
+  max-width: 1280px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.Section1Container > div > h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(102, 101, 101);
+  margin: 0;
+  padding-left: 15px;
+}
+.section1CatalogeImage {
+  padding: 20px;
+  padding-bottom: 0;
+}
+.Section1CardSection {
+  /* border: 1px solid red; */
+  display: grid;
+  gap: 10px;
+  padding: 15px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Section1MainContainer img {
+  width: 100%;
+}
+.section1CatalogeImage + p {
+  padding-left: 20px;
+  padding-top: 5px;
+}
+.Section1Container p {
+  margin: 0;
+  font-size: 1.3rem;
+  color: rgb(117, 116, 116);
+}
+.secondDivImg {
+  position: relative;
+  z-index: 5;
+  padding-right: 15px;
+}
+.OnPicture {
+  position: absolute;
+  left: 5%;
+  top: 3%;
+  z-index: 50;
+}
+.OnPicture h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
+  color: rgb(80, 79, 79);
+}
+.learnMore {
+  color: rgb(117, 116, 116);
+  text-decoration: none;
+  border-bottom: 1px solid rgb(117, 116, 116);
+  padding-bottom: 2px;
+}
+.secondDivImg img {
+  width: 100%;
+}
+
+@media screen and (width<950px) {
+  .Section1Container p {
+    font-size: 1.1rem;
+  }
+  .Section1Container > div > h2 {
+    font-size: 1.8rem;
+  }
+
+  .OnPicture h1 {
+    font-size: 2.1rem;
+  }
+  .learnMore {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (width<800px) {
+  .Section1Container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Section1Container > div > h2 {
+    padding-left: 20px;
+    font-size: 1.6rem;
+  }
+  .secondDivImg {
+    padding: 20px;
+  }
+  .Section1CardSection {
+    padding: 20px;
+  }
+  .Section1Container p {
+    font-size: 1rem;
+  }
+  .OnPicture {
+    top: 30px;
+    left: 30px;
+  }
+  .OnPicture h1 {
+    font-size: 1.7rem;
+  }
+  .learnMore {
+    font-size: 1rem;
+  }
+}
+@media screen and (width<500px) {
+  .Section1Container > div > h2 {
+    font-size: 1.4rem;
+  }
+  .Section1Container p {
+    font-size: 0.9rem;
+  }
+  .OnPicture {
+    top: 30px;
+    left: 30px;
+  }
+  .OnPicture h1 {
+    font-size: 1.6rem;
+  }
+  .learnMore {
+    font-size: 0.9rem;
+  }
+}

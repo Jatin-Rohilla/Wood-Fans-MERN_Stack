@@ -1,0 +1,58 @@
+.section2MainDiv {
+  max-width: 1280px;
+  /* border: 1px solid red; */
+  margin: auto;
+  padding: 10px;
+}
+.section2MainDiv > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  padding-bottom: 0;
+}
+.section2MainDiv > div:first-child h1 {
+  font-weight: 500;
+}
+.section2MainDiv > div:first-child p {
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  padding-bottom: 3px;
+}
+
+.section2MainDiv > div:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.section2MainDiv > div:nth-child(2) div {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+.section2MainDiv > div:nth-child(2) div img {
+  width: 100%;
+}
+.section2MainDiv > div:nth-child(2) div p:nth-child(2) {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 5px 0;
+}
+.section2MainDiv > div:nth-child(2) div p:nth-child(3) {
+  padding: 5px 0;
+  margin: 0;
+}
+
+@media screen and (width<800px) {
+  .section2MainDiv > div:nth-child(2) div p:nth-child(2) {
+    font-size: 0.6rem;
+  }
+  .section2MainDiv > div:nth-child(2) div p:nth-child(3) {
+    font-size: 0.8rem;
+  }
+  .section2MainDiv > div:first-child h1 {
+    font-size: 1.5rem;
+  }
+  .section2MainDiv > div:first-child p {
+    font-size: 0.9rem;
+  }
+}

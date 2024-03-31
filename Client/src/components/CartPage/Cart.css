@@ -1,0 +1,149 @@
+#cartContainer {
+  display: flex;
+  padding-top: 140px;
+  padding-bottom: 80px;
+  max-width: 1280px;
+  margin: auto;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+}
+.emptyCardContainer {
+  max-width: 1280px;
+  margin: auto;
+  /* border: 1px solid red; */
+}
+#Container {
+  /* max-width: 1280px; */
+  width: 70%;
+  /* margin-left: auto; */
+}
+
+#address {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+
+#address > h3 {
+  padding: 0px 30px;
+}
+#CardElement {
+  margin-top: 12px;
+  /* width: 100%; */
+  max-height: 65vh;
+  overflow: auto;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  border-radius: 10px;
+  padding-bottom: 5px;
+}
+
+.content-wrapper {
+  padding: 20px;
+}
+
+#CardElement::-webkit-scrollbar {
+  width: 7px;
+}
+
+#CardElement::-webkit-scrollbar-thumb {
+  background: #999999ca;
+  border-radius: 6px;
+}
+
+#CardElement::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+#CardElement::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#ProductDetail {
+  position: sticky;
+}
+
+.emptyCardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.emptyBox {
+  text-align: center;
+}
+
+.emptyImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.emptyBtnContainer {
+  margin-top: 20px;
+}
+
+.emptyBtn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.emptyBtn:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (min-width: 520px) and (max-width: 1100px) {
+  #cartContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #Container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 250px) and (max-width: 519px) {
+  #cartContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 100px;
+    padding-bottom: 25px;
+  }
+
+  #Container {
+    width: 100%;
+  }
+
+  #address {
+    margin: 0 4px;
+  }
+
+  #address h3 {
+    font-size: 12px;
+  }
+
+  .priceDetail {
+    font-size: 15px;
+  }
+
+  .priceTags p {
+    font-size: 13px;
+  }
+
+  .priceTags h4 {
+    font-size: 13px;
+  }
+  .priceTags h3 {
+    font-size: 15px;
+  }
+}

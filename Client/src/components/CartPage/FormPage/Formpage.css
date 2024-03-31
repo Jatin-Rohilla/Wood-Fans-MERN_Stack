@@ -1,0 +1,223 @@
+.wrapperDivFormPage {
+  padding-top: 130px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.color-666666 {
+  padding-bottom: 10px;
+}
+
+.thankyouMsg {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: gray;
+  border-top: 2px solid rgba(151, 149, 149, 0.289);
+  border-bottom: 2px solid rgba(151, 149, 149, 0.289);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.CountDown {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #2b2a2ad5;
+}
+
+.thankYouContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#delivery-address {
+  display: grid;
+  margin: auto;
+  grid-template-columns: 0.6fr 0.25fr;
+  gap: 20px;
+}
+#Payment-nav {
+  width: 1170px;
+  margin: auto;
+}
+
+#full-form {
+  /* width: 1170px; */
+  margin: auto;
+  padding-bottom: 40px;
+}
+.Payment-heading {
+  text-align: center;
+}
+
+#full-form {
+  display: flex;
+  gap: 1rem;
+}
+
+#full-form #payment {
+  flex: 4;
+}
+
+#flex-form #total-payment {
+  flex: 2;
+}
+
+#full-form > #payment > div {
+  border: 1px solid #f8f8f8;
+  padding: 15px;
+}
+
+.logo-img {
+  width: 5%;
+  margin-left: 4rem;
+  margin-top: 1rem;
+}
+
+#Payment-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-top: 20px;
+}
+
+.tollNumber {
+  display: flex;
+  text-align: center;
+  color: rgba(128, 128, 128, 0.637);
+}
+
+.heading-payment {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.heading-payment h3 {
+  margin-top: 9px;
+  margin-bottom: 9px;
+  font-size: 18px;
+}
+
+body div > form h4 span {
+  color: red;
+}
+#name-contact,
+#Address-details,
+#Street-details,
+#city-details {
+  display: flex;
+  gap: 1rem;
+}
+
+#Address-details {
+  margin-top: 8px;
+}
+
+#first-name,
+#lastname,
+#contact,
+#houseNumber,
+#apartment,
+#street,
+#landmark,
+#city,
+#pincode,
+#area-det {
+  display: block;
+  margin-top: 0.5rem;
+  width: 12rem;
+  height: 2rem;
+  /* border-style:none ; */
+}
+#Street-details,
+#city-details {
+  margin-top: 1.5rem;
+}
+#contact {
+  width: 25rem;
+}
+#apartment {
+  width: 38.5rem;
+}
+#street,
+#landmark {
+  width: 25.3rem;
+}
+
+#area-det {
+  width: 26.5rem;
+}
+
+.form {
+  padding: 15px;
+  /* background-color: #fefcfc; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* padding-top: 145px; */
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+.form h4 {
+  font-size: 16px;
+  margin: 9px 0px;
+}
+
+.form label {
+  font-size: 13px;
+  margin: 0px 0px 5px;
+}
+
+.form input,
+.form select,
+.form textarea {
+  font-size: 13px;
+  padding: 6px 12px 4px;
+  outline: 0;
+  border: none;
+  height: 32px;
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 5px;
+  background-color: white;
+}
+.btn-dark-bg {
+  color: #fff;
+  background-color: #666;
+  border-color: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 15px 10px 0px 0px;
+  padding: 8px 15px 8px;
+  font-size: 13px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.thank-you-message {
+  margin: auto;
+}
+
+.thankyouMsg {
+  text-align: center;
+}
+
+@media screen and (min-width: 520px) and (max-width: 1450px) {
+  #delivery-address {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .form {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  .checkOutContainer {
+    display: flex;
+    justify-content: end;
+  }
+}

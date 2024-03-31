@@ -1,0 +1,99 @@
+.PhotogallaryMain {
+  max-width: 1280px;
+  margin: auto;
+  padding: 15px;
+}
+.PhotogallaryMain h1 {
+  font-weight: 500;
+}
+
+.Photogallary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  column-gap: 12px;
+  row-gap: 12px;
+  height: 100vh;
+  margin: auto;
+}
+.Photogallary img {
+  width: 100%;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-size: cover;
+  background-image: url("https://api.woodfans.ru/storage/uploads/images/S4cpikgZTKjIQPyNLorFzRj7MaMlNM0aaIpBgNWx_cropped_1688_1658.webp");
+}
+.item2 {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  background-size: cover;
+  background-image: url("https://api.woodfans.ru/storage/uploads/images/2H44hPIgIAFBZ7gGrsJn4sksWDvXMa1xrD1EWZ23_cropped_1975_1975_widened_900.webp");
+}
+.item3 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-image: url("https://api.woodfans.ru/storage/uploads/images/8y4zCOBOxISNI0pXJNpjOasGGX8MsJCdfVor2QT2.webp");
+  background-size: cover;
+}
+.item4 {
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-image: url("https://api.woodfans.ru/storage/uploads/images/5FswCGgqfvwA1iwJYJiSfQX3QVdZerp7FsnbFGj3.webp");
+  background-size: cover;
+}
+.item5 {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-row-end: 7;
+  background-image: url("https://api.woodfans.ru/storage/uploads/images/hOwEAdHvEAQxy5wH6ukJRby5iHyCiwaBOh9BETFT.webp");
+  background-size: cover;
+}
+.item6 {
+  grid-column-start: 2;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  background-image: url("https://api.woodfans.ru/storage/uploads/images/5KGsaJ5aqzJQBazNm9VJt5YZUtUeSAqZkka6Gxmo.webp");
+  background-size: cover;
+}
+.item7 {
+  grid-column-start: 3;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  background-image: url("https://api.woodfans.ru/storage/uploads/images/YUg87pOFJRDMCrmlJ48EdJQKmRG5yYaLbtNF8btg_cropped_1981_1981_widened_540.webp");
+  background-size: cover;
+}
+.item8 {
+  grid-column-start: 4;
+  grid-row-start: 3;
+  grid-row-end: 7;
+  background-image: url("https://api.woodfans.ru/storage/uploads/images/cPdDkwV3Zi6PRhyWvP2JiHig2yArv3CdGO2AmNRw_widened_540.webp");
+  background-size: cover;
+}
+
+@media screen and (width<800px) {
+  .PhotogallaryMain h1 {
+    font-size: 1.6rem;
+    padding-left: 3px;
+  }
+  .Photogallary {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin-right: -9px;
+    padding-left: 3px;
+  }
+}
+@media screen and (width<600px) {
+  .PhotogallaryMain h1 {
+    font-size: 1.4rem;
+  }
+  .Photogallary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

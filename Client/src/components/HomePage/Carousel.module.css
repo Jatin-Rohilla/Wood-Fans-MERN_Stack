@@ -1,0 +1,13 @@
+#carouselContainer {
+  padding-top: 150px;
+}
+
+#carouselContainer img {
+  width: 100%;
+}
+
+@media screen and (width<850px) {
+  #carouselContainer {
+    padding-top: 90px;
+  }
+}

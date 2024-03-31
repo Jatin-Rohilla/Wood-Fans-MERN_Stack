@@ -1,0 +1,84 @@
+.contactUsMain {
+  max-width: 1280px;
+  margin: auto;
+  padding: 15px;
+  padding-top: 30px;
+}
+.contactUsMain h1 {
+  font-weight: 500;
+}
+.contactUs {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+}
+.contactUs input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+  padding: 10px;
+}
+.contactUs button {
+  cursor: pointer;
+}
+.contactName {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.contactMsg {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+.contactSend {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contactSend button {
+  padding: 15px 35px;
+  border: none;
+  background-color: #fccd5c;
+}
+
+.contactUs input::placeholder {
+  color: rgb(151, 149, 149);
+}
+.contactSend p {
+  color: rgb(151, 149, 149);
+}
+.paragraph {
+  padding: 5px;
+  padding-left: 0;
+}
+@media screen and (width<800px) {
+  .contactUsMain h1 {
+    font-size: 1.6rem;
+  }
+  .contactUsMain p {
+    font-size: 0.8rem;
+  }
+  .contactUs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (width<450px) {
+  .contactUsMain h1 {
+    font-size: 1.2rem;
+  }
+  .contactUsMain p {
+    font-size: 0.6rem;
+  }
+  .contactName {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .contactUs input::placeholder {
+    font-size: 0.6rem;
+  }
+}

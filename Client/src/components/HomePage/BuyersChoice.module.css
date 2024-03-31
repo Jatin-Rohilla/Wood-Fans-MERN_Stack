@@ -1,0 +1,166 @@
+.BuyersChoice {
+  max-width: 1280px;
+  margin: auto;
+  padding: 20px;
+}
+.BuyersChoice > div > h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.linkProvider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.linkProvider > div:nth-child(1) {
+  display: flex;
+  gap: 20px;
+}
+.linkProvider > div:nth-child(1) > p {
+  color: rgb(145, 143, 143);
+  cursor: pointer;
+}
+.linkProvider > div:nth-child(1) > p:hover {
+  color: rgb(88, 88, 88);
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+#selectedEffect {
+  color: black;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+.linkProvider > div:nth-child(2) > h2 {
+  border-bottom: 1px solid rgb(95, 95, 95);
+  color: rgb(94, 93, 93);
+  padding-bottom: 5px;
+}
+
+.cardWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.cardWrapper > div {
+  height: max-content;
+}
+.cardWrapper > div > p {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 0.9rem;
+}
+.cardWrapper > div > h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.cardWrapper > div > div {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5px;
+}
+.cardWrapper > div > div > h4 {
+  margin: 0;
+  padding-top: 10px;
+  font-weight: 500;
+  color: rgb(153, 151, 151);
+  cursor: pointer;
+}
+.cardWrapper > div > div > h4:hover {
+  color: rgb(95, 95, 95);
+}
+.cardWrapper > div > div > button {
+  padding: 10px;
+  background-color: #fccd5c;
+  border: none;
+  cursor: pointer;
+}
+.cardWrapper > div > div > button:hover {
+  background-color: #e4ac29;
+}
+.cardWrapper > div {
+  height: inherit;
+}
+
+.cardWrapper > div > img {
+  width: 100%;
+  height: 70%;
+  /* height: 50px; */
+}
+
+@media screen and (width<1000px) {
+  .BuyersChoice > div > h1 {
+    font-size: 1.8rem;
+  }
+  .cardWrapper > div > p {
+    font-size: 0.8rem;
+  }
+  .linkProvider > div:nth-child(1) > p {
+    font-size: 0.9rem;
+  }
+  .linkProvider > div:nth-child(2) > h2 {
+    font-size: 1.2rem;
+  }
+  .cardWrapper > div > h3 {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (width<850px) {
+  .BuyersChoice > div > h1 {
+    font-size: 1.6rem;
+  }
+  .cardWrapper > div > p {
+    font-size: 0.8rem;
+  }
+  .linkProvider > div:nth-child(1) > p {
+    font-size: 1rem;
+  }
+  .linkProvider > div:nth-child(1) > p:nth-child(4) {
+    display: none;
+  }
+  .linkProvider > div:nth-child(2) > h2 {
+    font-size: 1.1rem;
+  }
+  .cardWrapper > div > h3 {
+    font-size: 1rem;
+  }
+  .cardWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .linkProvider > div:nth-child(1) {
+    gap: 10px;
+  }
+  #selectedEffect {
+    padding-bottom: 5px;
+  }
+}
+@media screen and (width<500px) {
+  .BuyersChoice > div > h1 {
+    font-size: 1.4rem;
+  }
+  .cardWrapper > div > p {
+    font-size: 0.65rem;
+  }
+  .linkProvider > div:nth-child(1) > p {
+    font-size: 0.7rem;
+  }
+  .linkProvider > div:nth-child(2) > h2 {
+    font-size: 0.75rem;
+  }
+  .cardWrapper > div > h3 {
+    font-size: 0.8rem;
+  }
+  .cardWrapper > div > div > button {
+    padding: 5px;
+    font-size: 0.65rem;
+  }
+  .linkProvider > div:nth-child(1) {
+    gap: 10px;
+  }
+}

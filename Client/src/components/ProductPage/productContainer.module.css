@@ -1,0 +1,221 @@
+.container h1 {
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.singleCard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  /* border: 1px solid red; */
+}
+
+.loading {
+  padding-top: 120px;
+  height: 65vh;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+/* media queries */
+
+@media (max-width: 600px) {
+  .singleCard {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+  .mainCard > .topCover > p {
+    font-size: 1.8rem;
+  }
+  .topCover .input {
+    width: 300px;
+  }
+  .topCover > .location {
+    /* color: red; */
+    margin-left: -23rem;
+    margin-top: -4rem;
+  }
+
+  /* .container{
+        
+       
+    } */
+}
+
+@media only screen and (max-width: 840px) and (min-width: 600px) {
+  .singleCard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+    padding: 25px;
+  }
+  .filterPart {
+    display: none;
+  }
+}
+
+/* single image card */
+
+.singleCard > div img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: all ease 1s;
+}
+
+.singleCard > div img:hover {
+  cursor: pointer;
+  opacity: 1;
+  -webkit-animation: flash 2s;
+  animation: flash 2s;
+  scale: 1.2;
+}
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* signle card whole div */
+
+.singleCard > div {
+  /* border: 1px solid red; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+.singleCard > div > .nameDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  /* border: 1px solid #000; */
+}
+.nameDiv > span {
+  /* border: 1px solid #000; */
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  /* width: 10px; */
+}
+
+.singleCard hr {
+  margin-top: -5px;
+}
+.singleCard hr + p {
+  padding: 10px;
+  margin-top: -18px;
+}
+
+.singleCard > div > .priceDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  /* border: 1px solid red; */
+  /* align-items: center; */
+  margin-top: -25px;
+}
+.singleCard > div > .priceDiv p {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.singleCard > div > .priceDiv button {
+  width: 180px;
+  font-size: 14px;
+  font-weight: bold;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(119, 119, 119);
+  color: white;
+}
+
+.singleCard > div > .priceDiv button:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.container > .nextBtn span {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 22px;
+}
+.container > .nextBtn > button {
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: cursive;
+  font-size: 18px;
+  border: none;
+  background-color: plum;
+  color: black;
+}
+.container > .nextBtn > button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* filter part */
+
+.container > .filterPart > div {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  margin-left: 45rem;
+  align-items: center;
+  gap: 20px;
+  /* margin-top: 160px; */
+  /* border: 1px solid black; */
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  /* padding: 10px;
+    border-radius: 10px; */
+  /* border: 1px solid black; */
+}
+.container > .filterPart > div > div {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #c4c4c4;
+  font-family: cursive;
+}
+.container > .filterPart > div .fromCountry {
+  width: 180px;
+}
+@media only screen and (max-width: 1300px) and (min-width: 840px) {
+  .container {
+    padding: 25px;
+  }
+}
+@media (min-width: 1300px) {
+  .container {
+    width: 85vw;
+    padding: 100px;
+    /* margin: 5rem -4rem 0px 4rem ; */
+  }
+}
+@media (max-width: 600px) {
+}

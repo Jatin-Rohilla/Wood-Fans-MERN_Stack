@@ -1,0 +1,17 @@
+#navbar_container {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+#navbar_container::before {
+  position: absolute;
+  content: "";
+  height: 60px;
+  width: 100%;
+  background-color: #f8f8f8;
+  z-index: -1;
+}
+#navbar_container a {
+  color: #1b1b1b;
+}

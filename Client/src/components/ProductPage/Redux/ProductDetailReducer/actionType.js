@@ -1,0 +1,1 @@
+export const Detail_Obj="Detail_Obj";

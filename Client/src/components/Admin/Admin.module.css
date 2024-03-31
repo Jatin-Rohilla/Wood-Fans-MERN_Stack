@@ -1,0 +1,88 @@
+.container {
+  padding-top: 140px;
+  max-width: 1280px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+  min-height: 60vh;
+}
+
+.container > div:nth-child(2) > h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.8rem;
+  margin: 0;
+  color: rgb(82, 81, 81);
+  padding-bottom: 10px;
+}
+
+.container form > h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin: 0;
+  color: rgb(82, 81, 81);
+  border-bottom: 1px solid rgb(204, 202, 202);
+  padding-bottom: 10px;
+}
+
+.container form > label {
+  padding-left: 5px;
+  color: rgb(82, 81, 81);
+}
+
+.container > div:first-child > form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 10px;
+  margin: auto;
+  position: sticky;
+  top: 140px;
+  border: 1px solid rgb(184, 181, 181);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.container > div > form > input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(182, 182, 182);
+}
+.container > div > form > input[type="submit"] {
+  background-color: rgb(169, 218, 169);
+}
+.editButton {
+  padding: 7px 15px;
+  background-color: rgb(169, 218, 169);
+  border: none;
+  border-radius: 5px;
+}
+
+.deleteButton {
+  padding: 7px 15px;
+  background-color: rgb(218, 169, 171);
+  border: none;
+  border-radius: 5px;
+}
+
+.editButton:hover {
+  background-color: rgb(87, 223, 87);
+}
+.container > div > form > input[type="submit"]:hover {
+  background-color: rgb(87, 223, 87);
+}
+
+.deleteButton:hover {
+  background-color: rgb(233, 111, 115);
+}
+.handleReset {
+  background-color: rgb(218, 169, 171);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.handleReset:hover {
+  background-color: rgb(233, 111, 115);
+}
